@@ -1,0 +1,6 @@
+qemu-system-aarch64 -smp 4 -cpu cortex-a57 -machine virt \
+	-kernel ./linux/arch/arm64/boot/Image \
+	-initrd ./rootfs.img \
+	-append "nokaslr console=ttyAMA0 loglevel=8 rw oops=panic panic=1 init=/init" \
+	-nographic -s -no-reboot $@
+

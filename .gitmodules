@@ -1,0 +1,6 @@
+[submodule "busybox"]
+	path = busybox
+	url = https://github.com/mirror/busybox.git
+[submodule "gef"]
+	path = gef
+	url = https://github.com/hugsy/gef.git

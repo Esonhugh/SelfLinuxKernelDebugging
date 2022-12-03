@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ./busybox/_install
+find . | cpio -o --format=newc > ../../rootfs.img 
+
